@@ -12,7 +12,7 @@ DATABASE_DIR = REPO_ROOT / "code" / "database"
 if str(DATABASE_DIR) not in sys.path:
     sys.path.insert(0, str(DATABASE_DIR))
 
-import build_enz_cpd_seq_database as build  # noqa: E402
+import build_funczyme_database as build  # noqa: E402
 
 
 def test_bare_and_partially_annotated_substrates_are_retained():

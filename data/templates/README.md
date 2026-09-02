@@ -20,3 +20,13 @@ database or boundary method.
 `compound_data.tsv` standardizes canonical names and aliases. Chemical
 identifiers and structures are optional because not every substrate is a
 discrete small molecule. State how structures and aliases were verified.
+
+## Functional labels
+
+`functional_labels.tsv` is the explicit contract between curation and both
+FuncPred methods. Each row records a binary observation for one sequence, task,
+and family-defined label. Both positive (`1`) and experimentally meaningful
+negative (`0`) observations must be explicit; do not silently convert missing
+or untested activities to zero. `evaluation_group` defines the unit kept
+together during cross-validation, normally an orthogroup or a stricter
+sequence-similarity cluster.

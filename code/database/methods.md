@@ -20,7 +20,7 @@ first. Chemical structures and identifiers are optional.
 If lineage validation is used, provide `data/curated/species_lineages.tsv` with
 `BINOMIAL_NAME` and `CLADE1` through `CLADE8` columns. If manually curated
 sequences are used, FASTA headers must identify activity-table enzymes as
-described by `build_enz_cpd_seq_database.py --help`.
+described by `build_funczyme_database.py --help`.
 
 ## Build
 
@@ -28,7 +28,7 @@ Run from the repository root:
 
 ```bash
 mkdir -p results/database
-python code/database/build_enz_cpd_seq_database.py \
+python code/database/build_funczyme_database.py \
   --compound_file data/curated/compound_data.tsv \
   --activity_file data/curated/activity_data.tsv \
   --species_lineages data/curated/species_lineages.tsv \
@@ -42,7 +42,7 @@ same interface with capsule-relative paths:
 
 ```bash
 mkdir -p ../results/database
-python database/build_enz_cpd_seq_database.py \
+python database/build_funczyme_database.py \
   --compound_file ../data/curated/compound_data.tsv \
   --activity_file ../data/curated/activity_data.tsv \
   --species_lineages ../data/curated/species_lineages.tsv \
@@ -58,12 +58,12 @@ sequence names require an irreproducible human choice.
 
 ## Maintenance utilities
 
-Use `update_enz_cpd_db_from_tsv.py` for small, approval-driven curation fixes.
+Use `update_funczyme_database.py` for small, approval-driven curation fixes.
 It previews compound-centered change packages before modifying a copy of the
 database. Run each utility with `--help` for its complete interface.
 
-`add_npclassifier_to_compound_tsv.py` exports cached compound classifications
-from a built database. `merge_species_lineages.py` appends missing species with
+`export_compound_classifications.py` exports cached compound classifications
+from a built database. `extend_species_lineages.py` appends missing species with
 blank lineage fields for manual curation.
 
 ## Reproducibility assumptions

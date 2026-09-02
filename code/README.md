@@ -1,14 +1,18 @@
 # Code layout
 
-`database/` contains the family-neutral database builder and maintenance
-utilities supplied by the template. Add only the other stages required by the
-FuncZymeDB instance. Prefer descriptive subdirectory and script names over
-numbered filenames unless a directory is an explicitly ordered pipeline.
+The template includes three family-neutral, independently runnable stages:
 
-Suggested additional stage names are `family_membership`, `orthology`,
-`structure`, `phylogeny`, `modeling`, `prediction`, and `visualization`. These
-are contracts, not mandatory modules; publication-specific figures need not be
-part of the reusable template.
+- `database/` builds and maintains FuncZymeDB;
+- `orthology/` builds the orthogroup index and runs FuncPred-OG;
+- `machine_learning/` embeds proteins, trains models, and runs FuncPred-AI.
+
+`tests/` stays under `code/` because tests are executable project code. Prefer
+descriptive snake-case script names over acronyms or numbered filenames unless
+a directory is an explicitly ordered pipeline.
+
+An instance may add stages such as `family_membership`, `structure`, or
+`phylogeny`. Publication-specific figures should remain outside the reusable
+template.
 
 Each implemented stage should include adjacent documentation that records:
 

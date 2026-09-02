@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-merge_species_lineages.py
+extend_species_lineages.py
 
 Append any species from a one‐per‐line text file into the species_lineages.tsv
 if they don’t already appear there, leaving the other columns blank for manual curation.

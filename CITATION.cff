@@ -1,9 +1,30 @@
 cff-version: 1.2.0
-message: "If you use this software, cite the repository and the applicable instance release."
+message: "If you use this software, please cite this work."
 title: "FuncZymeDB template"
 type: software
 authors:
   - family-names: "Smith"
-    given-names: "Nathaniel"
+    given-names: "Nathaniel S. S."
 repository-code: "https://github.com/n8smith-io/FuncZymeDB"
 license: MIT
+preferred-citation:
+  type: article
+  title: "Systematic functional annotation of thousands of BAHD acyltransferases in plant genomes using Protein Language Model and phylogenomic tools"
+  authors:
+    - family-names: "Smith"
+      given-names: "Nathaniel S. S."
+    - family-names: "Yuan"
+      given-names: "Xinyu"
+    - family-names: "Melissinos"
+      given-names: "Chesney"
+    - family-names: "Satani"
+      given-names: "Sahaj"
+    - family-names: "Grissom"
+      given-names: "Crystal"
+    - family-names: "Moghe"
+      given-names: "Gaurav D."
+  journal: "bioRxiv"
+  year: 2026
+  start: "2026.06.09.730906"
+  doi: "10.64898/2026.06.09.730906"
+  url: "https://biorxiv.org/content/early/2026/06/12/2026.06.09.730906.abstract"

@@ -15,7 +15,7 @@ DATABASE_DIR = REPO_ROOT / "code" / "database"
 if str(DATABASE_DIR) not in sys.path:
     sys.path.insert(0, str(DATABASE_DIR))
 
-import build_enz_cpd_seq_database as build  # noqa: E402
+import build_funczyme_database as build  # noqa: E402
 
 
 def read_header(path: Path) -> set[str]:
@@ -51,7 +51,7 @@ def test_empty_starter_tables_build_an_empty_database(tmp_path: Path):
     output_fasta = tmp_path / "sequences.fa"
     command = [
         sys.executable,
-        str(DATABASE_DIR / "build_enz_cpd_seq_database.py"),
+        str(DATABASE_DIR / "build_funczyme_database.py"),
         "--compound_file",
         str(REPO_ROOT / "data/templates/compound_data.tsv"),
         "--activity_file",

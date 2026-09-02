@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-build_enz_cpd_seq_database.py
+build_funczyme_database.py
 
 Builds an enzyme, compound, and sequence database with optional sequence handling.
 
@@ -22,7 +22,7 @@ This script performs the following steps:
  11. Output a final JSON file (--output_file) and a final FASTA file (--output_fasta).
 
 Usage example:
-python code/database/build_enz_cpd_seq_database.py \
+python code/database/build_funczyme_database.py \
   --compound_file data/curated/compound_data.tsv \
   --activity_file data/curated/activity_data.tsv \
   --species_lineages data/curated/species_lineages.tsv \

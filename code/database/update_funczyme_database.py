@@ -27,7 +27,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Sequence, Set, Tuple
 
-from build_enz_cpd_seq_database import (
+from build_funczyme_database import (
     NA,
     NPClassifierClient,
     get_sanitized_value,

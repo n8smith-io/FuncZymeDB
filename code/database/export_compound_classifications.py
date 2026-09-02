@@ -3,7 +3,7 @@
 Add NPClassifier annotations from a FuncZymeDB JSON file to a compound TSV.
 
 Usage:
-    python code/database/add_npclassifier_to_compound_tsv.py \
+    python code/database/export_compound_classifications.py \
       --json results/database/funczymedb.json \
       --input data/curated/compound_data.tsv \
       --output results/database/compound_data_with_npc.tsv
