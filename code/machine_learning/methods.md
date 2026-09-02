@@ -2,15 +2,16 @@
 
 ## Purpose
 
-FuncPred-AI trains one binary logistic-regression model for each function label
+FuncPred-AI trains one binary logistic-regression model for each substrate label
 defined by an enzyme-family instance. Protein features are mean-pooled ESMC
 embeddings. Evaluation uses held-out biological groups, not random sequence
 rows, to reduce information leakage among closely related proteins.
 
-This template deliberately does not prescribe biochemical tasks. Copy
-`data/templates/functional_labels.tsv` to `data/curated/` and define appropriate
-tasks and labels for the family. Every sequence/label pair must have an explicit
-binary value; an untested activity must not silently be treated as inactive.
+This template deliberately does not prescribe a substrate ontology. Copy
+`data/templates/substrate_labels.tsv` to `data/curated/` and define appropriate
+substrate tasks and labels for the family. Every sequence/label pair must have
+an explicit binary value; an untested activity must not silently be treated as
+inactive.
 
 ## Generate embeddings
 
@@ -30,7 +31,7 @@ download on first use and are cached by the ESM package.
 ```bash
 python code/machine_learning/train_funcpred_ai_models.py \
   --embeddings results/machine_learning/characterized_embeddings.npz \
-  --labels data/curated/functional_labels.tsv \
+  --labels data/curated/substrate_labels.tsv \
   --output-dir results/machine_learning/trained_models \
   --folds 5 \
   --seed 42

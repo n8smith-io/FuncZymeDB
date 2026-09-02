@@ -18,7 +18,7 @@ repository:
 1. Replace the placeholder values in `environment/instance.yaml`.
 2. Add curated records to copies of the tables in `data/templates/`.
 3. Define and document a reproducible protein-family membership rule.
-4. Define family-appropriate tasks in `functional_labels.tsv`.
+4. Define family-appropriate substrate tasks in `substrate_labels.tsv`.
 5. Run or adapt the supplied orthology and model-training stages as needed.
 6. Add dependencies to `environment/environment.yml` and tests to `code/tests/`.
 7. Update this README with the instance's scope, setup, run order, data
@@ -36,8 +36,8 @@ A FuncZymeDB instance should make the following boundaries explicit:
    sequence identifiers, evidence, and curator provenance.
 2. **Family membership** — the reference model or set, software version,
    thresholds, accepted sequences, and rejected sequences.
-3. **Functional labels** — family-appropriate labels and the rules used to
-   derive them from curated records.
+3. **Substrate labels** — family-appropriate substrate classes and the rules
+   used to derive them from curated records.
 4. **Evaluation** — leakage-resistant grouping, held-out data, metrics,
    uncertainty, baselines, and model-selection criteria.
 5. **Prediction** — versioned inputs and models, applicability limits, and

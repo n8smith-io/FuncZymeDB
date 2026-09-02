@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Train one reproducible binary classifier per family-defined function label."""
+"""Train one reproducible binary classifier per family-defined substrate label."""
 
 from __future__ import annotations
 

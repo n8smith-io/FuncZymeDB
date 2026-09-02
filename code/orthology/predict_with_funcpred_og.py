@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Transfer functional labels from characterized members of an orthogroup."""
+"""Transfer substrate labels from characterized members of an orthogroup."""
 
 from __future__ import annotations
 

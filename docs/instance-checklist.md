@@ -25,7 +25,7 @@
 ## Evaluation and release
 
 - [ ] Define leakage-resistant groups before model selection.
-- [ ] Define explicit family-appropriate tasks, labels, and negative evidence.
+- [ ] Define explicit substrate tasks, labels, and negative evidence.
 - [ ] Compare FuncPred-OG and FuncPred-AI on the same held-out units.
 - [ ] Include simple baselines and uncertainty estimates.
 - [ ] State applicability limits and unsupported uses.

@@ -32,7 +32,7 @@ python code/orthology/predict_with_funcpred_og.py \
   --query-fasta data/prediction/query.fa \
   --reference-fasta data/orthology/family_reference.fa \
   --orthology results/orthology/orthology.json \
-  --labels data/curated/functional_labels.tsv \
+  --labels data/curated/substrate_labels.tsv \
   --output results/prediction/funcpred_og.tsv
 ```
 

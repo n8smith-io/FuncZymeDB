@@ -14,7 +14,7 @@ family_membership:
 paths:
   activity_table: data/curated/activity_data.tsv
   compound_table: data/curated/compound_data.tsv
-  functional_labels: data/curated/functional_labels.tsv
+  substrate_labels: data/curated/substrate_labels.tsv
   database: results/database/funczymedb.json
   sequence_fasta: results/database/sequences.fa
   orthology_database: results/orthology/orthology.json
