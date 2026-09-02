@@ -1,0 +1,57 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.token
+*_token
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments and packaging
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg-info/
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Generated or local project material
+archive/
+results/
+scratch/
+data/logs/
+data/cache/
+data/generated/
+data/intermediate/
+data/models/
+
+# Large scientific and model artifacts
+*.ckpt
+*.h5
+*.hdf5
+*.npz
+*.npy
+*.pkl
+*.pt
+*.pth
+*.safetensors
+
+# Curated inputs should be added deliberately. Keep empty templates tracked.
+!data/templates/
+!data/templates/**

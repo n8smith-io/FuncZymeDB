@@ -1,1 +1,78 @@
-# FuncZymeDB
+# FuncZymeDB template
+
+FuncZymeDB is a starter repository for building a curated enzyme, reaction,
+compound, and sequence database for one protein family and for developing
+reproducible functional-prediction workflows around it.
+
+This repository is intentionally family-neutral. It contains project
+conventions, empty curation tables, and workflow contracts, but no biological
+records, trained models, family-membership rules, or analysis results.
+
+## Start a new instance
+
+Create a new repository with GitHub's **Use this template** button. In the new
+repository:
+
+1. Replace the placeholder values in `config/instance.yaml`.
+2. Add curated records to copies of the tables in `data/templates/`.
+3. Define and document a reproducible protein-family membership rule.
+4. Implement only the workflow stages needed for the instance under `code/`.
+5. Add the required dependencies to `environment.yml` and tests to `tests/`.
+6. Update this README with the instance's scope, setup, run order, data
+   provenance, maintainers, and citation information.
+
+Do not commit generated results, model caches, downloaded databases, secrets,
+or machine-specific paths. See `data/README.md` and `.gitignore` for the default
+data policy.
+
+## Core workflow contracts
+
+A FuncZymeDB instance should make the following boundaries explicit:
+
+1. **Curation** — publication-specific activity records, compound vocabulary,
+   sequence identifiers, evidence, and curator provenance.
+2. **Family membership** — the reference model or set, software version,
+   thresholds, accepted sequences, and rejected sequences.
+3. **Functional labels** — family-appropriate labels and the rules used to
+   derive them from curated records.
+4. **Evaluation** — leakage-resistant grouping, held-out data, metrics,
+   uncertainty, baselines, and model-selection criteria.
+5. **Prediction** — versioned inputs and models, applicability limits, and
+   auditable outputs for uncharacterized sequences.
+
+Stage-specific code belongs in clearly named subdirectories of `code/`. Every
+stage should document its inputs, outputs, assumptions, provenance, and exact
+run command in a neighboring `methods.md` or README.
+
+## Repository layout
+
+```text
+config/          tracked instance configuration
+code/            analysis and workflow code
+data/templates/  tracked, empty curation-table templates
+data/            curated inputs and ignored generated intermediates
+docs/            tracked design and reproducibility documentation
+results/         ignored generated figures, reports, and tables
+scratch/         ignored exploratory work
+tests/           automated tests
+```
+
+## Environment
+
+The starter environment is deliberately small:
+
+```bash
+conda env create -f environment.yml
+conda activate funczymedb
+cp .env.example .env  # only when local overrides are needed
+```
+
+Add and pin scientific or command-line dependencies when an instance actually
+uses them. Keep `environment.yml` and the tested environment in sync.
+
+## License and citation
+
+Code and documentation are provided under the MIT License. Update
+`CITATION.cff` with the instance authors and preferred citation before a
+release. Curated datasets may require additional source-specific attribution;
+record that provenance in the instance documentation.

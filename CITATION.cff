@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, cite the repository and the applicable instance release."
+title: "FuncZymeDB template"
+type: software
+authors:
+  - family-names: "Smith"
+    given-names: "Nathaniel"
+repository-code: "https://github.com/n8smith-io/FuncZymeDB"
+license: MIT

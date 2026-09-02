@@ -1,0 +1,17 @@
+schema_version: 1
+
+instance:
+  name: REPLACE_ME
+  enzyme_family: REPLACE_ME
+  description: REPLACE_ME
+  maintainers: []
+
+family_membership:
+  method: REPLACE_ME
+  reference: REPLACE_ME
+  acceptance_rule: REPLACE_ME
+
+paths:
+  activity_table: data/curated/activity_data.tsv
+  compound_table: data/curated/compound_data.tsv
+  results: results
