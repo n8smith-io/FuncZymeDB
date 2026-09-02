@@ -8,7 +8,8 @@ For code changes:
 
 1. Create a branch from `main`.
 2. Update adjacent methods or run documentation.
-3. Add or update tests and run them in `environment.yml`.
+3. Add or update tests under `code/tests/` and run them in the environment
+   specified by `environment/environment.yml`.
 4. Confirm generated data, credentials, and machine-specific paths are absent.
 5. Describe the inputs, outputs, validation, and compatibility impact in the
    pull request.

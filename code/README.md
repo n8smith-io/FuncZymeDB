@@ -1,12 +1,14 @@
 # Code layout
 
-Add only the stages required by this FuncZymeDB instance. Prefer descriptive
-subdirectory and script names over numbered filenames unless a directory is an
-explicitly ordered pipeline.
+`database/` contains the family-neutral database builder and maintenance
+utilities supplied by the template. Add only the other stages required by the
+FuncZymeDB instance. Prefer descriptive subdirectory and script names over
+numbered filenames unless a directory is an explicitly ordered pipeline.
 
-Suggested stage names are `database`, `family_membership`, `orthology`,
-`structure`, `phylogeny`, `modeling`, `prediction`, and `visualization`.
-These are contracts, not mandatory modules.
+Suggested additional stage names are `family_membership`, `orthology`,
+`structure`, `phylogeny`, `modeling`, `prediction`, and `visualization`. These
+are contracts, not mandatory modules; publication-specific figures need not be
+part of the reusable template.
 
 Each implemented stage should include adjacent documentation that records:
 

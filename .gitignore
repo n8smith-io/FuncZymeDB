@@ -33,8 +33,10 @@ Thumbs.db
 
 # Generated or local project material
 archive/
-results/
-scratch/
+results/*
+!results/README.md
+scratch/*
+!scratch/README.md
 data/logs/
 data/cache/
 data/generated/

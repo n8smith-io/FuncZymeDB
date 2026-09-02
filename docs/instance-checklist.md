@@ -4,7 +4,7 @@
 
 - [ ] Define the protein family and intended prediction tasks.
 - [ ] Name maintainers and the supported contact channel.
-- [ ] Replace every `REPLACE_ME` value in `config/instance.yaml`.
+- [ ] Replace every `REPLACE_ME` value in `environment/instance.yaml`.
 
 ## Curation and provenance
 
